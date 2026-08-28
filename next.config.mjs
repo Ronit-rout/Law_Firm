@@ -1,7 +1,17 @@
 /** @type {import('next').NextConfig} */
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+let repo = "";
+if (isGithubActions) {
+  const repoName = process.env.GITHUB_REPOSITORY?.replace(/.*?\//, "");
+  repo = repoName ? `/${repoName}` : "";
+}
+
 const nextConfig = {
   reactStrictMode: true,
+  output: "export",
+  basePath: repo,
   images: {
+    unoptimized: true,
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" },
     ],

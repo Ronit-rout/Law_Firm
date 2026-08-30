@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function PracticeAreasPage() {
   return (
-    <section className="pt-40 pb-28 bg-parchment min-h-screen">
+    <section className="pt-44 pb-32 bg-parchment min-h-screen">
       <div className="container-content">
         <RevealOnScroll>
           <MatterIndex label="Practice Areas" />
@@ -23,13 +23,11 @@ export default function PracticeAreasPage() {
         </RevealOnScroll>
         <RevealOnScroll delay={140}>
           <p className="mt-6 max-w-xl font-body text-base text-slate-muted leading-relaxed">
-            Factual descriptions of the matters we advise on. This is not an
-            exhaustive statement of firm capability, and should be confirmed
-            against the firm's actual practice before publication.
+            Factual descriptions of the areas of law the firm advises on.
           </p>
         </RevealOnScroll>
 
-        <div className="mt-14">
+        <div className="mt-16">
           {practiceAreas.map((area, i) => (
             <RevealOnScroll key={area.slug} delay={i * 60}>
               <PracticeCard area={area} />

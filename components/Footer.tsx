@@ -30,7 +30,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="font-body text-sm text-parchment/75 hover:text-parchment transition-colors focus-ring"
+                    className="font-body text-sm text-parchment/75 hover:text-brassLight transition-colors focus-ring"
                   >
                     {item.label}
                   </Link>
@@ -44,11 +44,11 @@ export default function Footer() {
               Practice Areas
             </p>
             <ul className="mt-4 space-y-3">
-              {practiceAreas.slice(0, 5).map((p) => (
+              {practiceAreas.map((p) => (
                 <li key={p.slug}>
                   <Link
                     href={`/practice-areas/${p.slug}`}
-                    className="font-body text-sm text-parchment/75 hover:text-parchment transition-colors focus-ring"
+                    className="font-body text-sm text-parchment/75 hover:text-brassLight transition-colors focus-ring"
                   >
                     {p.title}
                   </Link>
@@ -64,6 +64,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2 font-body text-sm text-parchment/75">
               <li>{firm.phone}</li>
               <li>{firm.email}</li>
+              <li className="text-xs text-parchment/50 pt-2">Odisha, India</li>
             </ul>
           </div>
         </div>
@@ -82,9 +83,8 @@ export default function Footer() {
               Bar Council of India Compliance & Disclaimer →
             </Link>
           </div>
-          <p className="font-body text-xs text-parchment/45 shrink-0">
-            © {new Date().getFullYear()} {firm.shortName}. Demo build — placeholder
-            content, not for public use.
+          <p className="font-body text-xs text-parchment/50 shrink-0">
+            © {new Date().getFullYear()} {firm.shortName}. All rights reserved.
           </p>
         </div>
       </div>

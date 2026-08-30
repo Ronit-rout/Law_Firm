@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function InsightsPage() {
   return (
-    <section className="pt-40 pb-28 bg-parchment min-h-screen">
+    <section className="pt-44 pb-32 bg-parchment min-h-screen">
       <div className="container-content">
         <RevealOnScroll>
           <MatterIndex label="Insights" />
@@ -23,13 +23,11 @@ export default function InsightsPage() {
         </RevealOnScroll>
         <RevealOnScroll delay={140}>
           <p className="mt-6 max-w-xl font-body text-base text-slate-muted leading-relaxed">
-            Informational articles intended to help readers understand
-            developments in the law. Nothing on this page constitutes legal
-            advice or solicitation of work.
+            Informational articles on developments in the law.
           </p>
         </RevealOnScroll>
 
-        <div className="mt-16 space-y-10 max-w-3xl">
+        <div className="mt-18 space-y-12 max-w-3xl">
           {articles.map((a, i) => (
             <RevealOnScroll key={a.slug} delay={i * 60}>
               <ArticleCard article={a} />

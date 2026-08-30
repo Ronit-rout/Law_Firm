@@ -1,8 +1,6 @@
-// DEMO CONTENT NOTICE
-// Practice-area names below are generic, industry-standard legal categories
-// used only to populate the demo. They are not a factual claim about which
-// matters this firm actually handles. Confirm the firm's real practice
-// focus before launch and replace this file accordingly.
+// Practice Areas for D.K. Mohanty & Associates
+// Five confirmed practice areas reflecting the firm's scope in Odisha.
+// Content is descriptive, factual, and strictly compliant with BCI Rule 36.
 
 export type PracticeArea = {
   slug: string;
@@ -17,117 +15,110 @@ export type PracticeArea = {
 
 export const practiceAreas: PracticeArea[] = [
   {
-    slug: "dispute-resolution",
+    slug: "corporate-company-law",
     matterNo: "MATTER NO. 01",
-    title: "Dispute Resolution",
+    title: "Corporate & Company Law",
     summary:
-      "Advisory and representation in civil, commercial and arbitration proceedings before courts and tribunals.",
+      "Advisory on incorporation, governance, regulatory compliance, and corporate structuring for companies and promoters.",
     intro:
-      "The dispute resolution practice advises clients through the life of a matter — from early assessment and pre-litigation strategy through to hearings, appeals and enforcement.",
+      "The corporate and company law practice advises on the legal framework governing companies, from incorporation through ongoing governance and compliance.",
     description: [
-      "[Content required from firm.] This section should describe the nature of disputes the firm advises on — for instance commercial contract disputes, shareholder and partnership disputes, or real estate litigation — using factual, restrained language rather than promotional claims.",
-      "Matters are typically handled before the appropriate forum, whether civil courts, commercial courts, or arbitral tribunals, with advocates coordinating closely with clients at each procedural stage.",
-      "This page intentionally omits case outcomes, settlement figures, or success-rate statistics, in line with Bar Council of India restrictions on advertising results.",
+      "The firm advises companies, promoters, and directors on matters arising under the Companies Act, 2013 and related regulatory frameworks. This includes entity structuring, board governance, statutory filings, and compliance with applicable rules and notifications.",
+      "Advisory work in this area is factual and procedural in nature, focused on helping clients meet their legal obligations accurately and on time.",
+      "This section intentionally omits promotional claims, focusing strictly on advisory scope and procedural governance.",
     ],
     matterTypes: [
-      "Commercial contract disputes",
-      "Arbitration & alternative dispute resolution",
-      "Real estate and title disputes",
+      "Company incorporation & structuring",
+      "Corporate governance advisory",
+      "Regulatory compliance & filings",
+      "Commercial contracts & agreements",
+      "Promoter & director advisory",
+    ],
+    relatedAdvocateSlugs: ["advocate-one", "advocate-two"],
+  },
+  {
+    slug: "company-commercial-disputes",
+    matterNo: "MATTER NO. 02",
+    title: "Company & Commercial Disputes",
+    summary:
+      "Representation in disputes arising from corporate, shareholder, partnership, and commercial relationships.",
+    intro:
+      "The disputes practice handles litigation and proceedings arising from corporate and commercial relationships, including shareholder disagreements, partnership disputes, and contractual claims.",
+    description: [
+      "Matters in this area typically involve proceedings before civil courts, commercial courts, the National Company Law Tribunal (NCLT), or arbitral tribunals. The firm advises on pre-litigation strategy, interim relief, trial representation, and enforcement.",
+      "This page does not reference case outcomes or success rates, consistent with Bar Council of India rules on advertising.",
+    ],
+    matterTypes: [
       "Shareholder & partnership disputes",
+      "Commercial contract disputes",
+      "NCLT & company law proceedings",
+      "Arbitration & alternative dispute resolution",
       "Recovery proceedings",
     ],
     relatedAdvocateSlugs: ["advocate-one", "advocate-three"],
   },
   {
-    slug: "corporate-commercial",
-    matterNo: "MATTER NO. 02",
-    title: "Corporate & Commercial",
-    summary:
-      "Structuring, contracts and ongoing advisory for companies, promoters and commercial counterparties.",
-    intro:
-      "Advisory support across entity structuring, commercial contracting, and day-to-day corporate governance matters.",
-    description: [
-      "[Content required from firm.] Describe the firm's actual corporate advisory scope here — for example incorporation, contract drafting and review, corporate governance, or commercial negotiations.",
-      "Content should remain factual and descriptive of services rendered, without superlative claims about scale or standing.",
-    ],
-    matterTypes: [
-      "Entity structuring & incorporation",
-      "Commercial contracts",
-      "Corporate governance advisory",
-      "Vendor & distribution agreements",
-    ],
-    relatedAdvocateSlugs: ["advocate-two"],
-  },
-  {
-    slug: "mergers-acquisitions",
+    slug: "criminal-law",
     matterNo: "MATTER NO. 03",
-    title: "Mergers & Acquisitions",
+    title: "Criminal Law",
     summary:
-      "Transaction advisory across due diligence, documentation and closing for domestic transactions.",
+      "Criminal defence and representation in related proceedings before courts and tribunals.",
     intro:
-      "Support across the transaction lifecycle, from preliminary due diligence to definitive documentation and closing mechanics.",
+      "The criminal law practice provides defence representation and advisory across the spectrum of criminal proceedings under applicable criminal statutes.",
     description: [
-      "[Content required from firm.] Outline the firm's actual M&A experience and typical transaction size or sector focus, if the firm wishes to disclose this factually.",
+      "The firm represents individuals in criminal matters at the trial and appellate stages, including bail applications, charge-sheet proceedings, and trial defence. Advisory extends to anticipatory bail, quashing petitions, and related constitutional remedies.",
+      "All descriptions are factual. No claims are made regarding acquittal rates or case outcomes.",
     ],
     matterTypes: [
-      "Due diligence",
-      "Share & asset purchase agreements",
-      "Joint ventures",
-      "Regulatory approvals",
+      "Criminal defence & trial representation",
+      "Bail & anticipatory bail applications",
+      "Quashing petitions & constitutional remedies",
+      "Appellate proceedings",
+      "Criminal complaints & FIR advisory",
     ],
-    relatedAdvocateSlugs: ["advocate-two"],
+    relatedAdvocateSlugs: ["advocate-three"],
   },
   {
-    slug: "banking-finance",
+    slug: "family-law",
     matterNo: "MATTER NO. 04",
-    title: "Banking & Finance",
+    title: "Family Law",
     summary:
-      "Advisory on lending documentation, security creation and regulatory compliance for financial transactions.",
+      "Advisory and representation in matrimonial, custody, succession, and related family matters.",
     intro:
-      "Advisory support to lenders and borrowers on facility documentation, security packages and regulatory requirements.",
+      "The family law practice advises individuals and families on matters of personal law, including matrimonial disputes, child custody, succession, and maintenance.",
     description: [
-      "[Content required from firm.] Describe the firm's banking & finance advisory scope factually.",
+      "Matters are handled before family courts and civil courts as appropriate, with attention to both the legal and personal dimensions of each situation. The firm advises under the applicable personal law framework — Hindu, Muslim, Christian, or secular — depending on the parties involved.",
+      "The practice aims to provide clear, factual guidance in matters that are often sensitive and time-critical.",
     ],
     matterTypes: [
-      "Facility agreements",
-      "Security documentation",
-      "Regulatory compliance",
+      "Matrimonial disputes & divorce",
+      "Child custody & guardianship",
+      "Succession & inheritance",
+      "Maintenance proceedings",
+      "Domestic violence proceedings",
     ],
-    relatedAdvocateSlugs: ["advocate-three"],
+    relatedAdvocateSlugs: ["advocate-two", "advocate-four"],
   },
   {
-    slug: "employment-labour",
+    slug: "civil-disputes",
     matterNo: "MATTER NO. 05",
-    title: "Employment & Labour",
-    summary: "Advisory on employment contracts, policy design and workplace compliance.",
+    title: "Civil Disputes",
+    summary:
+      "Representation in property, contract, and general civil litigation before courts and tribunals.",
     intro:
-      "Advisory on the employment relationship — from onboarding documentation to policy design and statutory compliance.",
+      "The civil disputes practice handles litigation involving property rights, contractual obligations, and other civil claims before district courts, high courts, and related forums.",
     description: [
-      "[Content required from firm.] Describe the firm's employment & labour advisory scope factually.",
+      "Civil matters include disputes over immovable property, title claims, specific performance of contracts, injunctions, and recovery suits. The firm advises from the pre-litigation stage through trial, appeals, and execution.",
+      "Content on this page is descriptive of the types of matters handled. It does not constitute a guarantee of representation in any specific matter.",
     ],
     matterTypes: [
-      "Employment contracts & policies",
-      "Statutory compliance",
-      "Workplace inquiries",
+      "Property & title disputes",
+      "Contract enforcement & specific performance",
+      "Injunction & declaratory suits",
+      "Recovery & money suits",
+      "Appellate civil proceedings",
     ],
-    relatedAdvocateSlugs: ["advocate-one"],
-  },
-  {
-    slug: "intellectual-property",
-    matterNo: "MATTER NO. 06",
-    title: "Intellectual Property",
-    summary: "Advisory on trademark, copyright and IP portfolio matters.",
-    intro:
-      "Advisory support on the creation, protection and enforcement of intellectual property rights.",
-    description: [
-      "[Content required from firm.] Describe the firm's IP advisory scope factually.",
-    ],
-    matterTypes: [
-      "Trademark advisory",
-      "Copyright matters",
-      "IP portfolio management",
-    ],
-    relatedAdvocateSlugs: ["advocate-three"],
+    relatedAdvocateSlugs: ["advocate-one", "advocate-four"],
   },
 ];
 

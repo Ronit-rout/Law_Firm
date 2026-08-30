@@ -30,6 +30,13 @@ export default function RevealOnScroll({
       return;
     }
 
+    // If element is already in the viewport on page load/navigation, reveal immediately
+    const rect = node.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      setVisible(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -39,8 +46,9 @@ export default function RevealOnScroll({
           }
         });
       },
-      { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.05, rootMargin: "0px 0px 50px 0px" }
     );
+
     observer.observe(node);
     return () => observer.disconnect();
   }, []);
@@ -51,7 +59,7 @@ export default function RevealOnScroll({
     <Comp
       ref={ref}
       className={`reveal ${visible ? "is-visible" : ""} ${className}`}
-      style={{ transitionDelay: visible ? `${delay}ms` : "0ms" }}
+      style={{ transitionDelay: visible && delay > 0 ? `${Math.min(delay, 120)}ms` : "0ms" }}
     >
       {children}
     </Comp>

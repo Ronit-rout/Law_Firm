@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function AdvocatesPage() {
   return (
-    <section className="pt-40 pb-28 bg-parchment min-h-screen">
+    <section className="pt-44 pb-32 bg-parchment min-h-screen">
       <div className="container-content">
         <RevealOnScroll>
           <MatterIndex label="Our People" />
@@ -21,8 +21,13 @@ export default function AdvocatesPage() {
             The advocates.
           </h1>
         </RevealOnScroll>
+        <RevealOnScroll delay={140}>
+          <p className="mt-6 max-w-xl font-body text-base text-slate-muted leading-relaxed">
+            Advocates and counsel representing matters across Odisha courts and tribunals.
+          </p>
+        </RevealOnScroll>
 
-        <div className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
           {advocates.map((a, i) => (
             <RevealOnScroll key={a.slug} delay={i * 80}>
               <AdvocateCard advocate={a} />

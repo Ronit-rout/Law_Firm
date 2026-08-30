@@ -79,11 +79,11 @@ export default function AdvocateDetail({
                   {advocate.qualification.join(", ")}
                 </dd>
               </div>
-              <div>
-                <dt className="font-mono text-[11px] tracking-widest2 uppercase text-slate-muted">
-                  Enrolment
+              <div className="border-l-2 border-brass pl-3">
+                <dt className="font-mono text-[11px] tracking-widest2 uppercase text-brass">
+                  Enrolment No., Bar Council of Odisha
                 </dt>
-                <dd className="mt-2 font-body text-sm text-navy">
+                <dd className="mt-1 font-body text-base font-semibold text-navy">
                   {advocate.enrolment}
                 </dd>
               </div>

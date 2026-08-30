@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="pt-40 pb-28 bg-parchment min-h-screen">
+    <section className="pt-44 pb-32 bg-parchment min-h-screen">
       <div className="container-content grid grid-cols-1 md:grid-cols-12 gap-14">
         <div className="md:col-span-5">
           <RevealOnScroll>
@@ -24,9 +24,8 @@ export default function ContactPage() {
           </RevealOnScroll>
           <RevealOnScroll delay={140}>
             <p className="mt-6 font-body text-base text-slate-muted leading-relaxed max-w-md">
-              Reach us using the details below, or send a message using the
-              form. We respond to enquiries directly; this form does not
-              connect you with a marketplace of advocates.
+              Reach the firm using the details below, or send an enquiry using
+              the form.
             </p>
           </RevealOnScroll>
 

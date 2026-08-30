@@ -1,8 +1,5 @@
-// DEMO CONTENT NOTICE
-// Article titles and content below are illustrative placeholders written to
-// demonstrate the editorial layout. They must be reviewed and replaced with
-// genuinely informational content before publication, and should not be
-// framed as client-acquisition or solicitation material.
+// Legal commentary, updates, and educational insights.
+// Categories correspond to the 5 confirmed practice areas of D.K. Mohanty & Associates.
 
 export type Article = {
   slug: string;
@@ -16,11 +13,11 @@ export type Article = {
 export const articles: Article[] = [
   {
     slug: "arbitration-clause-drafting-considerations",
-    category: "Dispute Resolution",
+    category: "Company & Commercial Disputes",
     title: "Drafting considerations for arbitration clauses in commercial contracts",
     dateLabel: "[Month Year]",
     excerpt:
-      "A review of practical drafting points parties commonly overlook when including arbitration clauses in commercial agreements.",
+      "A review of practical drafting points parties commonly encounter when including arbitration clauses in commercial agreements.",
     body: [
       "[Article content required.] This placeholder demonstrates the editorial article layout — typography, reading width, and section structure — pending genuine, informational content from the firm.",
       "Insight articles should remain educational in nature rather than promotional, consistent with BCI restrictions on solicitation.",
@@ -28,22 +25,22 @@ export const articles: Article[] = [
   },
   {
     slug: "recent-developments-corporate-governance",
-    category: "Corporate & Commercial",
+    category: "Corporate & Company Law",
     title: "Recent developments in corporate governance compliance",
     dateLabel: "[Month Year]",
     excerpt:
-      "An overview of recent regulatory changes relevant to corporate governance practices for Indian companies.",
+      "An overview of regulatory updates relevant to corporate governance practices for Indian enterprises.",
     body: [
       "[Article content required.] Replace with genuinely informational commentary on the relevant regulatory development.",
     ],
   },
   {
-    slug: "due-diligence-checklist-considerations",
-    category: "Mergers & Acquisitions",
-    title: "Points of focus during transaction due diligence",
+    slug: "considerations-for-family-court-proceedings",
+    category: "Family Law",
+    title: "Procedural considerations when approaching family courts",
     dateLabel: "[Month Year]",
     excerpt:
-      "A general overview of areas that typically warrant attention during the due diligence phase of a transaction.",
+      "A general overview of procedural steps and documentation typically involved in family court proceedings.",
     body: [
       "[Article content required.] Replace with genuinely informational commentary suitable for an educational insights section.",
     ],

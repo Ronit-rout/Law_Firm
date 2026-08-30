@@ -1,7 +1,6 @@
-// DEMO CONTENT NOTICE
-// Names, qualifications, enrolment numbers and biographies below are
-// placeholders only. No real advocate's identity, credentials or
-// professional history should ever be inferred from this file.
+// Advocates and counsel profile data for D.K. Mohanty & Associates.
+// Areas of practice correspond to the 5 confirmed firm practice domains.
+// Enrolment references State Bar Council of Odisha.
 
 export type Advocate = {
   slug: string;
@@ -19,10 +18,14 @@ export const advocates: Advocate[] = [
     slug: "advocate-one",
     name: "[Advocate Name]",
     designation: "[Senior Partner]",
-    areas: ["Dispute Resolution", "Employment & Labour"],
+    areas: [
+      "Corporate & Company Law",
+      "Company & Commercial Disputes",
+      "Civil Disputes",
+    ],
     qualification: ["[LL.B., University Name, Year]", "[Additional Qualification]"],
-    enrolment: "[Enrolment No., State Bar Council]",
-    barAssociation: "[Bar Association Name]",
+    enrolment: "[Enrolment No., Bar Council of Odisha]",
+    barAssociation: "[Bar Association, Odisha]",
     bio: [
       "[Biography required from firm.] Replace with a factual, professional summary of this advocate's practice areas and professional background. Avoid superlative or promotional language.",
     ],
@@ -31,10 +34,10 @@ export const advocates: Advocate[] = [
     slug: "advocate-two",
     name: "[Advocate Name]",
     designation: "[Partner]",
-    areas: ["Corporate & Commercial", "Mergers & Acquisitions"],
+    areas: ["Corporate & Company Law", "Family Law"],
     qualification: ["[LL.B., University Name, Year]"],
-    enrolment: "[Enrolment No., State Bar Council]",
-    barAssociation: "[Bar Association Name]",
+    enrolment: "[Enrolment No., Bar Council of Odisha]",
+    barAssociation: "[Bar Association, Odisha]",
     bio: [
       "[Biography required from firm.] Replace with a factual, professional summary of this advocate's practice areas and professional background.",
     ],
@@ -43,10 +46,10 @@ export const advocates: Advocate[] = [
     slug: "advocate-three",
     name: "[Advocate Name]",
     designation: "[Partner]",
-    areas: ["Dispute Resolution", "Banking & Finance", "Intellectual Property"],
+    areas: ["Company & Commercial Disputes", "Criminal Law"],
     qualification: ["[LL.B., University Name, Year]", "[Additional Qualification]"],
-    enrolment: "[Enrolment No., State Bar Council]",
-    barAssociation: "[Bar Association Name]",
+    enrolment: "[Enrolment No., Bar Council of Odisha]",
+    barAssociation: "[Bar Association, Odisha]",
     bio: [
       "[Biography required from firm.] Replace with a factual, professional summary of this advocate's practice areas and professional background.",
     ],
@@ -55,10 +58,10 @@ export const advocates: Advocate[] = [
     slug: "advocate-four",
     name: "[Advocate Name]",
     designation: "[Associate]",
-    areas: ["Corporate & Commercial"],
+    areas: ["Family Law", "Civil Disputes"],
     qualification: ["[LL.B., University Name, Year]"],
-    enrolment: "[Enrolment No., State Bar Council]",
-    barAssociation: "[Bar Association Name]",
+    enrolment: "[Enrolment No., Bar Council of Odisha]",
+    barAssociation: "[Bar Association, Odisha]",
     bio: [
       "[Biography required from firm.] Replace with a factual, professional summary of this advocate's practice areas and professional background.",
     ],
